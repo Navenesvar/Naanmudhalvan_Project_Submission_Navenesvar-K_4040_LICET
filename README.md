@@ -5,13 +5,13 @@
 - search for their favorite tracks
 - listen later their added tracks
 - keep track of their listening history.
-##Introduction
-### This project utilizes Django, a high-level Python web framework, to create a robust and scalable music streaming platform. With user authentication, lister later functionality, search functionality, and a history feature, users can enjoy a personalized music experience tailored to their preferences.
+## Introduction
+#### This project utilizes Django, a high-level Python web framework, to create a robust and scalable music streaming platform. With user authentication, lister later functionality, search functionality, and a history feature, users can enjoy a personalized music experience tailored to their preferences.
 
 # Admin Username and Password
 ## To access the admin panel and manage the application, use the following credentials:
-###  Username: Navenesvar
-###  Password: navenesvar
+### Admin Username: Navenesvar
+### Admin Password: navenesvar
 
 # Regular Username and Password
 ## I used the following regular user credentials for my screenshots and channel music uploading.
