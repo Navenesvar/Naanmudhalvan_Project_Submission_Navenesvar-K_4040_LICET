@@ -1,0 +1,69 @@
+{%extends 'music_app/basic.html'%}
+{% block title%}BeatBox{% endblock %}
+
+{% block body %}
+      {% load static %}
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'music_app/nolife.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'music_app/music.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'music_app/music-bg.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <h2 style='padding-left: 9%;padding-top:2%;'>Trending Songs</h2>
+      
+      <div class='row' style='padding-top: 2%; padding-left: 7%; padding-right: 3%;'>
+      {% for i in song %}
+    <div class="col-md-4" style="padding-left: 3%;padding-bottom:3%">
+        <div class="card" style="width: 18rem;">
+            <img src="/media/{{ i.image }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ i.name }}</h5>
+                <p class="card-text">{{ i.tags }}</p>
+                <p class="card-text">Singer: {{ i.singer}}</p>
+                <a href="/music_app/songs/{{i.song_id}}" class="btn btn-outline-danger">Listen Now</a>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+
+
+
+{% if user.is_authenticated %}
+<h2 style="padding-left: 4%; padding-top: 2%; font-family: 'Verdana';">Your Listen Later</h2>
+
+  <div class="row" style="padding-top: 2%; padding-left: 2%;padding-right: 3%;">
+    {% for i in watch reversed %}
+    <div class="col-md-4" style="padding-left: 3%;padding-bottom:3%">
+        <div class="card" style="width: 18rem;">
+      <img src="/media/{{i.image}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{i.name}}</h5>
+        <p class="card-text" style="color: green;">Tags: {{i.tags}}</p>
+        <p class="card-text" style="color: green;">Singer: {{i.singer}}</p>
+        <p class="card-text" style="color: green;">Movie: {{i.movie}}</p>
+        <a href="/musicbeats/songs/{{i.song_id}}" class="btn btn-outline-danger ">Listen Song</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+  </div>
+  {% endif %}
+
+</div>
+
+{% endblock %}

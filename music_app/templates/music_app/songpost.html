@@ -1,0 +1,45 @@
+{% extends "music_app/basic.html" %}
+{% block title %}{{song.name}}{% endblock %}
+
+{% block body %}
+
+{% if message%}
+<script>
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: '{{message}}',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    </script>
+{% endif %}
+<div class='container' >
+    <div class="row justify-content-center">
+        <div class="col-md-4" style="padding-top:3%;">
+            <img src="/media/{{song.image}}" alt="" height="300px" width="470px" style="padding-right: 20px;">
+        </div>
+        <div class="col-md-4" style="padding-top:3%;">
+            <h2 style="font-weight:550;color:green;padding-left:6%;padding-top:2%;">Title: {{song.name}}</h2>
+            <h4 style="padding-left:6%;padding-top:2%;font-weight:550;font-size: 20px;">Category: {{song.tags}}</h4>
+            <h4 style="padding-left:6%;padding-top:2%;font-weight:550;font-size: 20px;">Singer: {{song.singer}}</h4>
+            <h4 style="padding-left:6%;padding-top: 2%; font-weight: 550;font-size: 20px;">Credit: <a href="{{song.credit}}" target="blank_">Click here</a></h4>            
+            <h4 style="padding-left:6%;padding-top:2%;font-weight:550;font-size: 20px;">Movie: {{song.movie}}</h4>
+            <audio controls style="padding-top: 2%;padding-left:6%">
+                    <source src="/media/{{song.song}}" type="audio/mp3">
+            </audio>
+            
+            <div style="padding-left: 3%;padding-top:2%">
+
+            <div class="row" style="padding-left: 3%;padding-top:2%">
+            <form action="/music_app/watchlater" method="POST">{% csrf_token %}
+            <input type="hidden" name="video_id" value="{{song.song_id}}">
+            <button type="submit" class="btn btn-outline-danger" id="submit_btn">Add to Listen Later</button>
+            </form>
+            <a href="/media/{{song.song}}" download style="padding-left: 3%;padding-top:2%"><button class="btn btn-outline-danger">Download Song</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

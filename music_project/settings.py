@@ -56,7 +56,7 @@ ROOT_URLCONF = 'music_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['music-app/templates/music_app'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
