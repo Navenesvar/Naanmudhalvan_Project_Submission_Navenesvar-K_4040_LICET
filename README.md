@@ -18,7 +18,7 @@
 ###  Password: naven1032
 
 
-## Features of the Web App
+## Features of BeatBox
 - User Authentication: Secure user authentication system allows users to create accounts, log in, and manage their profiles.
 - Lister Later: Users can add tracks to their "Lister Later" playlist to listen to them at their convenience.
 - My Channel: Personalized channels allow users to curate their own playlists and share them with others.
