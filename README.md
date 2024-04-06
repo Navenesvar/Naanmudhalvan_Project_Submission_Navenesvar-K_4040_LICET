@@ -1,12 +1,11 @@
 # Music Web Application Using Django Framework
 ## This is my seamless and interactive music web application developed for my Naan Mudhalvan Course Project Submission
+## Introduction
 ### This web application is built using Django framework and aims to provide users with a 
 - platform to listen to music
 - search for their favorite tracks
 - listen later their added tracks
 - keep track of their listening history.
-## Introduction
-#### This project utilizes Django, a high-level Python web framework, to create a robust and scalable music streaming platform. With user authentication, lister later functionality, search functionality, and a history feature, users can enjoy a personalized music experience tailored to their preferences.
 
 # Admin Username and Password
 ## To access the admin panel and manage the application, use the following credentials:
