@@ -7,7 +7,7 @@
 
 ## Admin Username and Password (Superuser)
 #### To access the admin panel and manage the application, use the following credentials:
-###        Admin Username: Navenesvar
+###   &ensp; Admin Username: Navenesvar
 ###        Admin Password: navenesvar
 
 ## Regular Username and Password
