@@ -1,3 +1,4 @@
+from django.http import Http404
 from django.shortcuts import redirect, render
 from music_app.models import Channel, Song, Watchlater, History
 from django.contrib.auth import authenticate, login as auth_login, logout
@@ -66,12 +67,25 @@ def logout_user(request):
     return redirect("/")
 
 def channel(request, channel):
+    # Retrieve the Channel object based on the provided channel name
     chan = Channel.objects.filter(name=channel).first()
-    video_ids = str(chan.music).split(" ")[1:]
 
+    # If the Channel object is not found, raise a 404 error
+    if not chan:
+        raise Http404("Channel not found")
+
+    # If the Channel object exists, retrieve the associated music IDs
+    if chan.music:
+        video_ids = str(chan.music).split(" ")[1:]
+    else:
+        # Handle the case where chan.music is None
+        video_ids = []
+
+    # Use the retrieved video IDs to fetch corresponding Song objects
     preserved = Case(*[When(pk=pk, then=pos) for pos, pk in enumerate(video_ids)])
-    song = Song.objects.filter(song_id__in=video_ids).order_by(preserved)    
+    song = Song.objects.filter(song_id__in=video_ids).order_by(preserved)
 
+    # Render the template with the retrieved Channel and Song objects
     return render(request, "music_app/channel.html", {"channel": chan, "song": song})
 
 def watchlater(request):
@@ -83,12 +97,12 @@ def watchlater(request):
         
         for i in watch:
             if video_id == i.video_id:
-                message = "Your Video is Already Added"
+                message = "Your Audio is Already Added"
                 break
         else:
             watchlater = Watchlater(user=user, video_id=video_id)
             watchlater.save()
-            message = "Your Video is Succesfully Added"
+            message = "Your Audio is Succesfully Added"
 
         song = Song.objects.filter(song_id=video_id).first()
         return render(request, f"music_app/songpost.html", {'song': song, "message": message})
