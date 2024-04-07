@@ -7,13 +7,13 @@
 
 ## Admin Username and Password (Superuser)
 #### To access the admin panel and manage the application, use the following credentials:
-### - Admin Username: Navenesvar
-### - Admin Password: navenesvar
+###        Admin Username: Navenesvar
+###        Admin Password: navenesvar
 
 ## Regular Username and Password
 #### I used the following regular user credentials for my screenshots and channel music uploading.
-### - Username: Navenesvar_27
-### - Password: naven1032
+###        Username: Navenesvar_27
+###        Password: naven1032
 
 
 ## Features of BeatBox
