@@ -3,22 +3,18 @@
 
 ### This is my seamless and interactive music web application developed for my Naan Mudhalvan Course Project Submission
 ## BeatBox
-### __BeatBox__ is the name of my music web application . It is built using Django framework and aims to provide users with a 
-- platform to listen to music
-- search for their favorite tracks
-- listen later their added tracks
-- keep track of their listening history.
+### __BeatBox__ is the name of my music web application .
 
-# Admin Username and Password (Superuser)
-## To access the admin panel and manage the application, use the following credentials:
+## Admin Username and Password (Superuser)
+### To access the admin panel and manage the application, use the following credentials:
 ### Admin Username: Navenesvar
 ### Admin Password: navenesvar
 
-# Regular Username and Password
+## Regular Username and Password
 ## I used the following regular user credentials for my screenshots and channel music uploading.
 ###  Username: Navenesvar_27
 ###  Password: naven1032
-<Leave multiple empty lines here>
+
 
 ## Features of BeatBox
 - User Authentication: Secure user authentication system allows users to create accounts, log in, and manage their profiles.
