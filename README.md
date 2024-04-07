@@ -1,4 +1,7 @@
 # Music Web Application Using Django Framework
+## Name   : Navenesvar K
+## ID     : au311121104040
+## College: Loyola-Icam College of Engineering and Technology
 ## This is my seamless and interactive music web application developed for my Naan Mudhalvan Course Project Submission
 ## BeatBox
 ### __BeatBox__ is the name of my music web application . It is built using Django framework and aims to provide users with a 
