@@ -1,8 +1,7 @@
 # Music Web Application Using Django Framework - BeatBox
-## Name   : Navenesvar K
-## ID     : au311121104040
-## College: Loyola-Icam College of Engineering and Technology
-## This is my seamless and interactive music web application developed for my Naan Mudhalvan Course Project Submission
+### Name   : Navenesvar K    |   ID     : au311121104040    |  College: Loyola-Icam College of Engineering and Technology
+
+### This is my seamless and interactive music web application developed for my Naan Mudhalvan Course Project Submission
 ## BeatBox
 ### __BeatBox__ is the name of my music web application . It is built using Django framework and aims to provide users with a 
 - platform to listen to music
@@ -28,11 +27,11 @@
 - Search Functionality: Robust search feature enables users to discover new music based on music title.
 - History: Track listening history to revisit favorite songs and discover new ones based on past preferences.
 
-# Project PPT
-## Music Web App Using Django Framework - Navenesvar K(4040_LICET).pptx
+## Project PPT
+### Music Web App Using Django Framework - Navenesvar K(4040_LICET).pptx
 ### The project ppt gives the complete description about my project.
-# Screenshots
-## Screenshots Music Web App Using Django Framework - Navenesvar K(4040_LICET).rar
+## Screenshots
+### Screenshots Music Web App Using Django Framework - Navenesvar K(4040_LICET).rar
 ### Access the screenshots of my project in the above zip file.
 
 # Project Setup
