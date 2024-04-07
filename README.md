@@ -1,4 +1,4 @@
-# Music Web Application Using Django Framework
+# Music Web Application Using Django Framework - BeatBox
 ## Name   : Navenesvar K
 ## ID     : au311121104040
 ## College: Loyola-Icam College of Engineering and Technology
