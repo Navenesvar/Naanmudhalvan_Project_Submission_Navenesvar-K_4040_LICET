@@ -27,14 +27,14 @@
 - My Channel: Personalized channels allow users to curate their own playlists and share them with others.
 - Search Functionality: Robust search feature enables users to discover new music based on music title.
 - History: Track listening history to revisit favorite songs and discover new ones based on past preferences.
-<Leave multiple empty lines here>
+
 # Project PPT
 ## Music Web App Using Django Framework - Navenesvar K(4040_LICET).pptx
 ### The project ppt gives the complete description about my project.
 # Screenshots
 ## Screenshots Music Web App Using Django Framework - Navenesvar K(4040_LICET).rar
 ### Access the screenshots of my project in the above zip file.
-###
+
 # Project Setup
 To set up the project locally, follow these steps:
 
