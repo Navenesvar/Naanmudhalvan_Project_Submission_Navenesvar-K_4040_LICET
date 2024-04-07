@@ -1,17 +1,17 @@
 # Music Web Application Using Django Framework - BeatBox
 ### Name   : Navenesvar K    |   ID     : au311121104040    |  College: Loyola-Icam College of Engineering and Technology
 
-### This is my seamless and interactive music web application developed for my Naan Mudhalvan Course Project Submission
+#### This is my seamless and interactive music web application developed for my Naan Mudhalvan Course Project Submission
 ## BeatBox
 ### __BeatBox__ is the name of my music web application .
 
 ## Admin Username and Password (Superuser)
-### To access the admin panel and manage the application, use the following credentials:
+#### To access the admin panel and manage the application, use the following credentials:
 ### Admin Username: Navenesvar
 ### Admin Password: navenesvar
 
 ## Regular Username and Password
-## I used the following regular user credentials for my screenshots and channel music uploading.
+#### I used the following regular user credentials for my screenshots and channel music uploading.
 ###  Username: Navenesvar_27
 ###  Password: naven1032
 
@@ -25,10 +25,10 @@
 
 ## Project PPT
 ### Music Web App Using Django Framework - Navenesvar K(4040_LICET).pptx
-### The project ppt gives the complete description about my project.
+#### The project ppt gives the complete description about my project.
 ## Screenshots
 ### Screenshots Music Web App Using Django Framework - Navenesvar K(4040_LICET).rar
-### Access the screenshots of my project in the above zip file.
+#### Access the screenshots of my project in the above zip file.
 
 # Project Setup
 To set up the project locally, follow these steps:
