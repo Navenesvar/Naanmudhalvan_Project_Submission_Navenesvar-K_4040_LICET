@@ -35,7 +35,7 @@ To set up the project locally, follow these steps:
 
 - Clone the repository:
 ```
-git clone https://github.com/Navenesvar/Naanmudhalvan_Project_Submission.git
+git clone https://github.com/Navenesvar/Naanmudhalvan_Project_Submission_Navenesvar-K_4040_LICET.git
 ```
 - Create a virtual environment:
 ```
