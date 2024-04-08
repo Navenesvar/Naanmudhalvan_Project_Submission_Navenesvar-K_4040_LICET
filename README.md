@@ -55,7 +55,7 @@ source venv/bin/activate
 ```
 - Navigate to the project directory:
 ```
-cd naanmudhalvan_project_submission
+cd Naanmudhalvan_Project_Submission_Navenesvar-K_4040_LICET
 ```
 - Install Django and Pillow(for managing images)
 ```
